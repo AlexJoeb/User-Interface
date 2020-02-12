@@ -75,6 +75,8 @@ h1, h2, h3, h4, h5 {
 .navigation {
 	width: 100%;
 	padding: 30px 0;
+
+	margin-bottom: 25px;
 }
 
 .navigation ul {
@@ -91,4 +93,30 @@ h1, h2, h3, h4, h5 {
 
 .navigation ul li a:hover {
 	text-decoration: underline;
+}
+
+/* Header */
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header div {
+	flex-basis: 50%;
+}
+
+header div:first-of-type {
+	text-align: center;
+	font-size: 70px;
+}
+
+header button {
+	border: 1px solid black;
+	padding: 5px 30px;
+	font-size: 15px;
+}
+
+header div:last-of-type{
+	text-align: center;
 }
