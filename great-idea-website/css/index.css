@@ -79,11 +79,13 @@ h1, h2, h3, h4, h5 {
 	margin-bottom: 25px;
 }
 
-.navigation ul {
-	width: 100%;
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
+.navigation ul li {
+	display: inline-block;
+	margin: 0 4%;
+}
+
+.navigation ul li:first-of-type {
+	margin-left: 150px;
 }
 
 .navigation ul li a {
@@ -97,18 +99,19 @@ h1, h2, h3, h4, h5 {
 
 /* Header */
 header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 100%;
+	text-align: center;
 }
 
 header div {
-	flex-basis: 50%;
+	display:inline-block;
 }
 
 header div:first-of-type {
 	text-align: center;
 	font-size: 70px;
+
+	margin: 0 20% 0 0;
 }
 
 header button {
@@ -117,6 +120,73 @@ header button {
 	font-size: 15px;
 }
 
+header button:hover {
+	cursor: pointer;
+}
+
+header button:active, header button:focus {
+	outline: none;
+}
+
 header div:last-of-type{
 	text-align: center;
+}
+
+/* Info Section */
+.info {
+	height: auto; width: 100%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 40px 0;
+	margin: 50px 0 20px;
+}
+
+.info_top {
+	width: 100%;
+}
+
+.info_top div {
+	display: inline-block;
+	width: 48%;
+}
+
+.info_top div:last-of-type {
+	margin-left: 20px;
+}
+
+.info_top div + div {
+	margin-left: 1.75%;
+}
+
+.info_middle img {
+	width: 100%;
+	margin: 40px 0;
+}
+
+.info_bottom {
+	width: 100%;
+}
+
+.info_bottom div {
+	width: 32%;
+	display:inline-block;
+}
+
+.info_bottom div + div {
+	margin-left: 1.75%;
+}
+
+/* Footer */
+footer {
+	height: 150px;
+	margin-bottom: 100px;
+}
+
+footer p {
+	margin-top: 20px;
+}
+
+.footer_copyright {
+	margin-top: 50px;
+	text-align:center;
 }
