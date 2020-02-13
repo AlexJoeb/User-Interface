@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: -150px;
 	margin-left: -10%;
 
-	background: lightgray;
+	background: aqua;
 	position: fixed;
 	z-index: 10;
 }
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5 {
 
 .navigation ul li a {
 	text-decoration: none;
-	color:gray ;
+	color:gray;
 }
 
 .navigation ul li a:hover {
