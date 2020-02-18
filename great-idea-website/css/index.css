@@ -64,3 +64,175 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+/* Container */
+.container{
+	width: 80vw;
+	margin: 0 auto;
+}
+
+/* Navigation */
+.navigation {
+	width: 100%;
+	padding: 30px 0;
+
+	margin-top: -150px;
+	margin-left: -10%;
+
+	background: aqua;
+	position: fixed;
+	z-index: 10;
+}
+
+.navigation ul li {
+	display: inline-block;
+	margin: 0 4%;
+}
+
+.navigation ul li:first-of-type {
+	margin-left: 150px;
+}
+
+.navigation ul li a {
+	text-decoration: none;
+	color:gray;
+}
+
+.navigation ul li a:hover {
+	text-decoration: underline;
+}
+
+/* Header */
+header {
+	width: 100%;
+	text-align: center;
+	margin-top: 150px;
+}
+
+header div {
+	display:inline-block;
+}
+
+header div:first-of-type {
+	text-align: center;
+	font-size: 70px;
+
+	margin: 0 20% 0 0;
+}
+
+header button {
+	border: 1px solid black;
+	padding: 5px 30px;
+	font-size: 15px;
+}
+
+header button:hover {
+	cursor: pointer;
+}
+
+header button:active, header button:focus {
+	outline: none;
+}
+
+header div:last-of-type{
+	text-align: center;
+}
+
+/* Info Section */
+.info {
+	height: auto; width: 100%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 40px 0;
+	margin: 50px 0 20px;
+}
+
+.info_top {
+	width: 100%;
+}
+
+.info_top div {
+	display: inline-block;
+	width: 48%;
+}
+
+.info_top div:last-of-type {
+	margin-left: 20px;
+}
+
+.info_top div + div {
+	margin-left: 1.75%;
+}
+
+.info_middle {
+	width: 100%;
+	margin: 40px 0;
+}
+
+.info_bottom {
+	width: 100%;
+}
+
+.info_bottom div {
+	width: 32%;
+	display:inline-block;
+}
+
+.info_bottom div + div {
+	margin-left: 1.75%;
+}
+
+/* Footer */
+footer {
+	height: 150px;
+	margin-bottom: 100px;
+}
+
+footer p {
+	margin-top: 20px;
+}
+
+footer h2 { font-weight: bold; }
+
+.footer_copyright {
+	margin-top: 50px;
+	text-align:center;
+}
+
+footer p, footer address, footer h2 {
+	font-family: 'Zilla Slab', 'Times New Roman', Times, serif;
+}
+
+/* Stretch */
+
+.img1 {
+	height: 40px; width: 190px;
+	background: url('../img/logo.png') no-repeat center center;
+}
+
+.img2 {
+	height: 400px; width: 400px;
+	background: url('../img/header-img.png') no-repeat center center;
+}
+
+.img3 {
+	height: 200px; width: 100%;
+	background: url('../img/mid-page-accent.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+button:hover {
+	background:black;
+	color:white;
+	border: 1px solid white;
+}
+
+.animate:hover {
+	animation: rotate 1s ease-in-out;
+}
+
+@keyframes rotate {
+	0% { transform: rotate(0deg); }
+	50% { transform: rotate(1000deg); }
+	100% { transform: rotate(0deg); }
+}
